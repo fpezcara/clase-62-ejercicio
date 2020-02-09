@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+.services,
+.testimonials,
+.clients {
+  background-color: #556877;
+}
+#clients {
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ecf5ff;
+}
+.section-clients {
+  background-color: #ecf5ff;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.section-clients .container .header h2 {
+  display: block;
+  color: #283d50;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.section-clients .container .header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+}
+ .section-clients .container #box-clients {
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+ .section-clients .container #box-clients .box-img {
+  width: 25%;
+  height: 25%;
+}
+
+
+

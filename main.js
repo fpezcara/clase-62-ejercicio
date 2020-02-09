@@ -18,71 +18,40 @@
 // ni agregar las animaciones en el hover de cada imagen. 
 
 const imagenes = [
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-1.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-2.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-3.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-4.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-5.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-6.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-7.png",
-  "https://newbiz-master-uqgespkghu.now.sh/img/clients/client-8.png",
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-1.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-2.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-3.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-4.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-5.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-6.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-7.png"],
+  ["https://newbiz-master-uqgespkghu.now.sh/img/clients/client-8.png"],
   ]
 
+const logos = document.getElementById("box-clients");
+
+console.log(logos)
+
+let imagen = ""
+for (let i = 0; i < imagenes.length; i++) {
+  imagen += `
+  <div class="box-clients">
+  <div class="box-img">
+    <div class="img-logo">
+    <img src = "${imagenes[[i]]}">       
+    </div>
+    </div>
+    </div>
+  
+  `
+  
+}
+
+logos.innerHTML = imagen
+
+console.log(imagen)
 
 
 
 
 
-
-
-
-
-
-
-
-
-//   <h2>Our Clients</h2>
-//   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
-// </div>
-// <div class="box-clients">
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-1.png" alt="myob">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-2.png" alt="belimo">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-3.png" alt="life groups">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-4.png" alt="lilly">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-5.png" alt="citrus">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-6.png" alt="trustly">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-7.png" alt="oldendorff">
-//     </div>
-//   </div>
-//   <div class="box-img">
-//     <div class="img-logo">
-//       <img src="images\clients\client-8.png" alt="grabyo">
-//     </div>
-//   </div>
-// </div>
